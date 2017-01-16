@@ -37,6 +37,8 @@ with Context(parallel=True, level='DEBUG'):
     acc = inter_subject_eval.vote_accuracy_curves(
         [Exp(dataset=Dataset.from_name('dbb'),
              Mod=dict(num_gesture=8,
+                      adabn=True,
+                      num_adabn_epoch=10,
                       context=[mx.gpu(0)],
                       symbol_kargs=dict(dropout=0, num_semg_row=16, num_semg_col=8, num_filter=64),
                       params='.cache/sensors-dbb-inter-subject-%d/model-0028.params'))],
@@ -54,6 +56,8 @@ with Context(parallel=True, level='DEBUG'):
     acc = inter_session_eval.vote_accuracy_curves(
         [Exp(dataset=Dataset.from_name('dbb'),
              Mod=dict(num_gesture=8,
+                      adabn=True,
+                      num_adabn_epoch=10,
                       context=[mx.gpu(0)],
                       symbol_kargs=dict(dropout=0, num_semg_row=16, num_semg_col=8, num_filter=64),
                       params='.cache/sensors-dbb-inter-session-%d/model-0028.params'))],
@@ -71,6 +75,8 @@ with Context(parallel=True, level='DEBUG'):
     acc = inter_subject_eval.vote_accuracy_curves(
         [Exp(dataset=Dataset.from_name('dbc'),
              Mod=dict(num_gesture=12,
+                      adabn=True,
+                      num_adabn_epoch=10,
                       context=[mx.gpu(0)],
                       symbol_kargs=dict(dropout=0, num_semg_row=16, num_semg_col=8, num_filter=64),
                       params='.cache/sensors-dbc-inter-subject-%d/model-0028.params'))],
