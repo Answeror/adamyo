@@ -41,6 +41,21 @@ You can download the prepared dataset from <http://zju-capg.org/myo/data/ninapro
 
 Licensed under an GPL v3.0 license.
 
+## Bibtex
+
+```
+@article{Du_Sensors_2017,
+  title={{Surface EMG-based inter-session gesture recognition enhanced by deep domain adaptation}},
+  author={Du, Yu and Jin, Wenguang and Wei, Wentao and Hu, Yu and Geng, Weidong},
+  journal={Sensors},
+  volume={17},
+  number={3},
+  pages={458},
+  year={2017},
+  publisher={Multidisciplinary Digital Publishing Institute}
+}
+```
+
 ## Misc
 
 Thanks DMLC team for their great [MxNet](https://github.com/dmlc/mxnet)!
